@@ -4,6 +4,6 @@ public class Americano extends CoffeeMaker{
 
     @Override
     protected void addCondiments() {
-        System.out.println("Americano: Adding condiments..");
+        System.out.println("Americano: Adding ice..");
     }
 }
