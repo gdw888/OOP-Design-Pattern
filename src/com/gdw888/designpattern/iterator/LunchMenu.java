@@ -2,7 +2,7 @@ package com.gdw888.designpattern.iterator;
 
 import java.util.Iterator;
 
-public class LunchMenu implements Menu{
+public class LunchMenu implements Iterable<MenuItem>{
 
     private MenuItem[] menuItems;
     private static final int LUNCH_MENU_NUM = 2;
@@ -13,8 +13,9 @@ public class LunchMenu implements Menu{
         menuItems[0] = new MenuItem("Pancake","Lunch Special", 2.00);
         menuItems[1] = new MenuItem("Coke","Pop", 1.00);
     }
+
     @Override
-    public Iterator<MenuItem> getIterator() {
+    public Iterator<MenuItem> iterator() {
         return new MenuArrayIterator(menuItems);
     }
 }

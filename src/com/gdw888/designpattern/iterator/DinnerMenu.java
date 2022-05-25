@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class DinnerMenu implements Menu{
+public class DinnerMenu implements Iterable<MenuItem>{
     private List<MenuItem> dinnerMenus;
 
     public DinnerMenu(){
@@ -14,7 +14,7 @@ public class DinnerMenu implements Menu{
     }
 
     @Override
-    public Iterator getIterator() {
+    public Iterator<MenuItem> iterator() {
         return dinnerMenus.iterator();
     }
 }
