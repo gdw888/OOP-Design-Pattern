@@ -23,9 +23,7 @@ public class VirtualObject {
             }
             System.out.println();
 
-            new Thread(()->{
-                initArray();
-            }).run();
+            new Thread(()->{initArray();}).run();
         }
     }
 
